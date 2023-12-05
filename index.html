@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 3.4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script>
+function funcion_nom() {
+  var nom = document.getElementById("name").value;
+  alert ('Introduce nombre ' + nom)
+}
+
+function funcion_apellido() {
+  var subname = document.getElementById("subname").value;
+  alert ('Bienvenido ' + subname)
+}
+
+</script>
+</head>
+
+<body>
+<h1 class="titulo">Practica 3.4</h1>
+Introduce nombre:  <input type="text" id="name" onblur="funcion_nom()">
+Introduce apellido1: <input type="text" id="subname" onchange="funcion_apellido()">
+</body>
+</html>
